@@ -1,0 +1,251 @@
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#pageContainer
+{
+    height: 1000px;
+    width: 100%;
+}
+
+/*estilos pagina principal*/
+#home
+{
+
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor
+{
+    padding: 6%;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedorPrincipal
+{
+     padding: 0%;
+}
+
+.titulo
+{
+    color: #642a73;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 0%;
+}
+
+/*Header*/
+header
+{
+    width:100%;
+    height: 480px;
+    background: #ee0979; 
+    background: -webkit-linear-gradient(to right, hsla(331, 93%, 48%, 0.582), hsla(25, 100%, 50%, 0.582)),url(../img/parqueChinghina.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 21%, 0.582), hsla(56, 71%, 40%, 0.472)),url(../img/parqueChinghina.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav
+{
+    text-align: right;
+    padding:2% 2% 0 0;
+}
+
+nav > a {
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 1%;
+    font-size: 18px;
+   
+}
+
+nav >a:hover{
+   text-decoration: underline;
+    color:#000;
+    
+}
+
+.logoPrincipal
+{
+    height: 140px;
+    margin-left: 43%;
+}
+
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .textosHeader
+{
+    display: flex;
+    height: 18%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em rgb(32, 32, 32);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.textosHeader h1
+{
+    font-size: 40px;
+}
+
+/* Galeria*/
+.portafolio
+{
+    background: "#f2f2f2";
+}
+
+ .galeriaPortafolio
+{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.imagenPort
+{
+    width: 31%;
+    height: 230px;
+    margin-bottom: 2%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+#casaCervecera
+{
+    width: 58%;
+}
+
+.imagenPort > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hooverGaleria
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(199, 94, 8, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hooverGaleria img
+{
+    width: 20%;
+}
+
+.hooverGaleria p
+{
+    color: #fff;
+    text-align: center;
+}
+
+.hooverGaleria a
+{
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.imagenPort:hover .hooverGaleria
+{
+    transform: scale(1);
+}
+
+
+#heladeriFrutyCream
+{
+    margin: 1%;
+    height: 98%;
+    width: 98%;
+}
+
+#deliluz
+{
+   margin: 1%;
+   height: 98%;
+   width: 98%;
+}
+
+#burguerElMono
+{
+    margin: 1%;
+   height: 98%;
+   width: 98%;
+}
+
+ /* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #c89111;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
